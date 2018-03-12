@@ -84,12 +84,9 @@ public class Calculador {
      */
     public int Dividir(int a, int b) {
 
-        if ((a % b == 0) && (a / b >= 0)) {
+        if ((a / b >= 0)) {
             a /= b;
-        } else {
-            a = -1;
         }
-
         return a;
     }
 }

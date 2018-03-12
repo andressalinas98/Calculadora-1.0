@@ -46,6 +46,7 @@ public class Conversor {
                 break;
             case 2:
                 c = operaciones.Restar(a, b);
+                
                 break;
             case 3:
                 c = operaciones.Multiplicar(a, b);
@@ -55,6 +56,9 @@ public class Conversor {
                 break;
         }
         String resultado=convertirInt(c);
+        if ("-1".equals(resultado)){
+            resultado="ERROR";
+        }
         return resultado;
     }
 }

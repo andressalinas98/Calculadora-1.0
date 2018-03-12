@@ -26,12 +26,13 @@ public class Interfaz extends javax.swing.JFrame {
      * Creates new form Interfaz
      */
     Conversor convert = new Conversor();
-    String save="0";
-    String save2="0";
-    
+    String save = "0";
+    String save2 = "0";
+
     public Interfaz() {
         initComponents();
     }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -292,12 +293,12 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_igualActionPerformed
-       if (save!=""){
-        save2 = txtPantalla.getText();
-       txtPantalla.setText("");
-        convert.convertirString(save,save2);
-        txtPantalla.setText(convert.operar());
-       }
+        if (save != "") {
+            save2 = txtPantalla.getText();
+            txtPantalla.setText("");
+            convert.convertirString(save, save2);
+                txtPantalla.setText(convert.operar());
+        }
     }//GEN-LAST:event_igualActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
@@ -341,15 +342,15 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_RestaActionPerformed
 
     private void multiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiplicacionActionPerformed
-       save = txtPantalla.getText();
-       txtPantalla.setText("");
-       convert.setOp(3);
+        save = txtPantalla.getText();
+        txtPantalla.setText("");
+        convert.setOp(3);
     }//GEN-LAST:event_multiplicacionActionPerformed
 
     private void divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionActionPerformed
-       save = txtPantalla.getText();
-       txtPantalla.setText("");
-       convert.setOp(4);
+        save = txtPantalla.getText();
+        txtPantalla.setText("");
+        convert.setOp(4);
     }//GEN-LAST:event_divisionActionPerformed
 
     /**
