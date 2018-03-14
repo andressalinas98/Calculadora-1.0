@@ -54,6 +54,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="igual" min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="btn0" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="borrar" min="-2" pref="60" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -92,21 +93,20 @@
                   <Component id="btn0" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Group type="102" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btn4" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btn5" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btn6" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="btn1" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btn2" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                          <Component id="btn3" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
-                      </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btn4" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="btn5" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="btn6" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                  <Component id="borrar" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btn1" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="btn2" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
+                      <Component id="btn3" alignment="3" min="-2" pref="60" max="-2" attributes="0"/>
                   </Group>
-                  <Component id="igual" max="32767" attributes="0"/>
+                  <Component id="igual" min="-2" pref="60" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -337,6 +337,20 @@
         </Property>
         <Property name="horizontalAlignment" type="int" value="4"/>
       </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="borrar">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="66" green="66" red="66" type="rgb"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="B"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="borrarActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
