@@ -26,9 +26,9 @@ public class Interfaz extends javax.swing.JFrame {
      * Creates new form Interfaz
      */
     Conversor convert = new Conversor();
-    String save = "";
-    String save2 = "";
-    String strShow = "";
+    String save = "0";
+    String save2 = "0";
+    String strShow = "0";
     int base = 10;
     int op = 0;
 
@@ -459,7 +459,7 @@ public class Interfaz extends javax.swing.JFrame {
     private void igualActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_igualActionPerformed
         if (save != "") {
             save2 = strShow;
-            convert.convertirString(save, save2, base);
+            convert.convertirStringB(save2, base);
             strShow = convert.operar(base,op);
             display.setText(strShow);
         }
@@ -502,28 +502,32 @@ public class Interfaz extends javax.swing.JFrame {
 
     private void sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sumaActionPerformed
         save = strShow;
-        strShow = "";
+        convert.convertirStringA(strShow, base);
+        strShow = "0";
         display.setText(strShow);
         op = 1;
     }//GEN-LAST:event_sumaActionPerformed
 
     private void RestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RestaActionPerformed
         save = strShow;
-        strShow = "";
+        convert.convertirStringA(strShow, base);
+        strShow = "0";
         display.setText(strShow);
         op = 2;
     }//GEN-LAST:event_RestaActionPerformed
 
     private void multiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiplicacionActionPerformed
         save = strShow;
-        strShow = "";
+        convert.convertirStringA(strShow, base);
+        strShow = "0";
         display.setText(strShow);
         op = 3;
     }//GEN-LAST:event_multiplicacionActionPerformed
 
     private void divisionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divisionActionPerformed
         save = strShow;
-        strShow = "";
+        convert.convertirStringA(strShow, base);
+        strShow = "0";
         display.setText(strShow);
         op = 4;
     }//GEN-LAST:event_divisionActionPerformed
@@ -531,7 +535,7 @@ public class Interfaz extends javax.swing.JFrame {
     private void borrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_borrarActionPerformed
         save = "";
         save2 = "";
-        strShow = "";
+        strShow = "0";
         display.setText(strShow);
     }//GEN-LAST:event_borrarActionPerformed
 
