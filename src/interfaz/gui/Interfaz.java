@@ -256,6 +256,7 @@ public class Interfaz extends javax.swing.JFrame {
         btnA.setBackground(new java.awt.Color(102, 102, 102));
         btnA.setForeground(new java.awt.Color(255, 255, 255));
         btnA.setText("A");
+        btnA.setEnabled(false);
         btnA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAActionPerformed(evt);
@@ -265,6 +266,7 @@ public class Interfaz extends javax.swing.JFrame {
         btnB.setBackground(new java.awt.Color(102, 102, 102));
         btnB.setForeground(new java.awt.Color(255, 255, 255));
         btnB.setText("B");
+        btnB.setEnabled(false);
         btnB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBActionPerformed(evt);
@@ -274,6 +276,7 @@ public class Interfaz extends javax.swing.JFrame {
         btnC.setBackground(new java.awt.Color(102, 102, 102));
         btnC.setForeground(new java.awt.Color(255, 255, 255));
         btnC.setText("C");
+        btnC.setEnabled(false);
         btnC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCActionPerformed(evt);
@@ -283,6 +286,7 @@ public class Interfaz extends javax.swing.JFrame {
         btnD.setBackground(new java.awt.Color(102, 102, 102));
         btnD.setForeground(new java.awt.Color(255, 255, 255));
         btnD.setText("D");
+        btnD.setEnabled(false);
         btnD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDActionPerformed(evt);
@@ -292,6 +296,7 @@ public class Interfaz extends javax.swing.JFrame {
         btnE.setBackground(new java.awt.Color(102, 102, 102));
         btnE.setForeground(new java.awt.Color(255, 255, 255));
         btnE.setText("E");
+        btnE.setEnabled(false);
         btnE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEActionPerformed(evt);
@@ -301,6 +306,7 @@ public class Interfaz extends javax.swing.JFrame {
         btnF.setBackground(new java.awt.Color(102, 102, 102));
         btnF.setForeground(new java.awt.Color(255, 255, 255));
         btnF.setText("F");
+        btnF.setEnabled(false);
         btnF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnFActionPerformed(evt);
