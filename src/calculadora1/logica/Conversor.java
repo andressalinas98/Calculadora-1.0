@@ -13,7 +13,7 @@ package calculadora1.logica;
  * @author Daniel Camargo 20172020078
  * @author Andres Salinas 20172020087
  *
- * @version 0.1, 11/03/2018
+ * @version 5.0, 14/03/2018
  * @since 0.1
  *
  */
@@ -21,7 +21,6 @@ public class Conversor {
 
     private int a;
     private int b;
-    private int op;
     Calculador operaciones = new Calculador();
 
     public void convertirStringA(String a,int base) {
@@ -43,20 +42,23 @@ public class Conversor {
     }
 
     public String operar(int base, int op) {
+        /**
+         * @param 
+         */
         int c=0;
         switch (op) {
             case 1:
-                c = operaciones.Sumar(a, b);
+                c = operaciones.sumar(a, b);
                 break;
             case 2:
-                c = operaciones.Restar(a, b);
+                c = operaciones.restar(a, b);
                 
                 break;
             case 3:
-                c = operaciones.Multiplicar(a, b);
+                c = operaciones.multiplicar(a, b);
                 break;
             case 4:
-                c = operaciones.Dividir(a, b);
+                c = operaciones.dividir(a, b);
                 break;
         }
         String resultado=convertirInt(c,base);

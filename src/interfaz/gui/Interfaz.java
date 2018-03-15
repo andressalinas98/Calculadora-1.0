@@ -10,14 +10,14 @@ import calculadora1.logica.Conversor;
 /**
  *
  *
- * esta es la interfaz del programa que recibe los datos del usuario e imprime
+ * Esta es la interfaz del programa que recibe los datos del usuario e imprime
  * los resultados
  *
  * @author Diego Velez 20172020075
  * @author Daniel Camargo 20172020078
  * @author Andres Salinas 20172020087
  *
- * @version 1.0, 12/03/2018
+ * @version 6.7, 15/03/2018
  * @since 1.0
  */
 public class Interfaz extends javax.swing.JFrame {
