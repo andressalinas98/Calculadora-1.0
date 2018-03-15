@@ -213,7 +213,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         borrar.setBackground(new java.awt.Color(102, 102, 102));
         borrar.setForeground(new java.awt.Color(255, 255, 255));
-        borrar.setText("B");
+        borrar.setText("CE");
         borrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 borrarActionPerformed(evt);
