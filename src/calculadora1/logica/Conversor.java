@@ -24,9 +24,9 @@ public class Conversor {
     private int op;
     Calculador operaciones = new Calculador();
 
-    public void convertirString(String a, String b) {
-        this.a = Integer.parseInt(a);
-        this.b = Integer.parseInt(b);
+    public void convertirString(String a, String b,int base) {
+        this.a = Integer.parseInt(a,base);
+        this.b = Integer.parseInt(b,base);
     }
 
     public String convertirInt(int a) {
