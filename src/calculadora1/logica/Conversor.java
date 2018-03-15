@@ -29,16 +29,18 @@ public class Conversor {
         this.b = Integer.parseInt(b,base);
     }
 
-    public String convertirInt(int a) {
-        String stra = String.valueOf(a);
+    public String convertirInt(int a,int base) {
+        String stra = Integer.toString(a,base);
+        return stra;
+    }
+    
+    public String cambiarStr(String str, int base1, int base2) {
+        int n = Integer.parseInt(str,base1);
+        String stra = Integer.toString(n,base2);
         return stra;
     }
 
-    public void setOp(int op) {
-        this.op = op;
-    }
-
-    public String operar() {
+    public String operar(int base, int op) {
         int c=0;
         switch (op) {
             case 1:
@@ -55,7 +57,7 @@ public class Conversor {
                 c = operaciones.Dividir(a, b);
                 break;
         }
-        String resultado=convertirInt(c);
+        String resultado=convertirInt(c,base);
         if ("-1".equals(resultado)){
             resultado="ERROR";
         }
