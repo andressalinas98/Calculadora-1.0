@@ -15,17 +15,6 @@ package calculadora1.logica;
  */
 public class Calculador {
 
-<<<<<<< HEAD
-    /**
-     * Realiza una suma entre 2 numeros enteros no negativos
-     * si el resultado es negativo retorna -1 (error)
-     * @param a
-     * @param b
-     * @return a+b ó -1 (error)
-     */
-    public int Sumar(int a, int b) {
-
-=======
     public int sumar(int a, int b) {
         /**
          * Realiza una suma entre 2 numeros enteros no negativos si el resultado
@@ -35,7 +24,6 @@ public class Calculador {
          * @param b
          * @return a+b ó -1 (error)
          */
->>>>>>> 5b78385a103949545ab5af15ee9ba6102df8c033
         if (a + b >= 0) {
             a += b;
         } else {
