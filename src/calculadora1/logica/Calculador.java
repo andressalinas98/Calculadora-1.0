@@ -22,7 +22,7 @@ package calculadora1.logica;
 public class Calculador {
 
     /**
-     * realiza una suma entre 2 numeros enteros no negativos
+     * Realiza una suma entre 2 numeros enteros no negativos
      * si el resultado es negativo retorna -1 (error)
      * @param a
      * @param b
