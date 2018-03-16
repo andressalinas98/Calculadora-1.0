@@ -24,18 +24,35 @@ public class Conversor {
     Calculador operaciones = new Calculador();
 
     public void convertirStringA(String a,int base) {
+        /**
+         * @param a
+         * @return a,base
+         */
         this.a = Integer.parseInt(a,base);
     }
     public void convertirStringB(String b,int base) {
+        /**
+         * @param b
+         * @return b,base
+         */
         this.b = Integer.parseInt(b,base);
     }
 
     public String convertirInt(int a,int base) {
+        /**
+         * @param a
+         * @return stra
+         */
         String stra = Integer.toString(a,base);
         return stra;
     }
     
     public String cambiarStr(String str, int base1, int base2) {
+        /**
+         * @param base1
+         * @param base2
+         * @return stra
+         */
         int n = Integer.parseInt(str,base1);
         String stra = Integer.toString(n,base2);
         return stra;
@@ -43,7 +60,12 @@ public class Conversor {
 
     public String operar(int base, int op) {
         /**
-         * @param 
+         * @param a
+         * @param b
+         * @return suma
+         * @return restar
+         * @return multiplicar
+         * @return dividir
          */
         int c=0;
         switch (op) {
