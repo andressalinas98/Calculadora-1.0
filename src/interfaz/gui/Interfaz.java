@@ -23,7 +23,8 @@ import calculadora1.logica.Conversor;
 public class Interfaz extends javax.swing.JFrame {
 
     /**
-     * Creates new form Interfaz
+     * Creamos variables para que nos guarde el primer número, luego el segundo
+     * y otra variable para que se imprima en la calculadora
      */
     Conversor convert = new Conversor();
     String save = "0";
@@ -448,16 +449,25 @@ public class Interfaz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "9";
         display.setText(strShow);
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "6";
         display.setText(strShow);
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
+       /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "3";
         display.setText(strShow);
     }//GEN-LAST:event_btn3ActionPerformed
@@ -472,41 +482,65 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_igualActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "1";
         display.setText(strShow);
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "2";
         display.setText(strShow);
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "4";
         display.setText(strShow);
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "5";
         display.setText(strShow);
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "7";
         display.setText(strShow);
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "8";
         display.setText(strShow);
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn0ActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "0";
         display.setText(strShow);
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void sumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_sumaActionPerformed
+       /**
+         * Instrucciones para realizar la suma
+         */
         save = strShow;
         convert.convertirStringA(strShow, base);
         strShow = "0";
@@ -515,6 +549,9 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_sumaActionPerformed
 
     private void RestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RestaActionPerformed
+        /**
+         * Instrucciones para realizar la resta
+         */
         save = strShow;
         convert.convertirStringA(strShow, base);
         strShow = "0";
@@ -523,6 +560,9 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_RestaActionPerformed
 
     private void multiplicacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multiplicacionActionPerformed
+        /**
+         * Instrucciones para realizar la multiplicación
+         */
         save = strShow;
         convert.convertirStringA(strShow, base);
         strShow = "0";
@@ -546,6 +586,9 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_borrarActionPerformed
 
     private void decimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_decimalActionPerformed
+        /**
+         * Si esta opción está habilitada, otros botones seran deshabilitados
+         */
         strShow = convert.cambiarStr(strShow, base, 10);
         display.setText(strShow);
         base = 10;
@@ -563,6 +606,9 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_decimalActionPerformed
 
     private void binarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_binarioActionPerformed
+        /**
+         * Si esta opción está habilitada, otros botones seran deshabilitados
+         */
         strShow = convert.cambiarStr(strShow, base, 2);
         display.setText(strShow);
         base = 2;
@@ -572,6 +618,9 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_binarioActionPerformed
 
     private void octalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_octalActionPerformed
+        /**
+         * Si esta opción está habilitada, otros botones seran deshabilitados
+         */
         strShow = convert.cambiarStr(strShow, base, 8);
         display.setText(strShow);
         base = 8;
@@ -587,6 +636,9 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_octalActionPerformed
 
     private void hexadecimalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hexadecimalActionPerformed
+        /**
+         * Si esta opción está habilitada, otros botones seran deshabilitados
+         */
         strShow = convert.cambiarStr(strShow, base, 16);
         display.setText(strShow);
         base = 16;
@@ -610,31 +662,49 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_hexadecimalActionPerformed
 
     private void btnAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "a";
         display.setText(strShow);
     }//GEN-LAST:event_btnAActionPerformed
 
     private void btnBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "b";
         display.setText(strShow);
     }//GEN-LAST:event_btnBActionPerformed
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "c";
         display.setText(strShow);
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "d";
         display.setText(strShow);
     }//GEN-LAST:event_btnDActionPerformed
 
     private void btnEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "e";
         display.setText(strShow);
     }//GEN-LAST:event_btnEActionPerformed
 
     private void btnFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFActionPerformed
+        /**
+         * Le dice a la calculadora que imprimir si se oprime este botón
+         */
         strShow += "f";
         display.setText(strShow);
     }//GEN-LAST:event_btnFActionPerformed
@@ -675,6 +745,9 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     public void bloquear() {
+        /**
+         * Función que nos permite deshabilitar botones
+         */
         btn0.setEnabled(false);
         btn1.setEnabled(false);
         btn2.setEnabled(false);
